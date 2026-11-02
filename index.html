@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="INDUSTRY HEART — метавселенная промышленности. Добывай ресурсы, строй заводы, сражайся за FECOCOIN. 2 пути, 12 уровней, 28+ единиц техники. 12+" />
+    <link rel="icon" type="image/jpeg" href="https://s3.twcstorage.ru/lovarus/vibebuilder/projects/c862ad9b-e947-4458-98eb-e753bfc93df8/images/7d2585bc-c324-47c1-9eda-1d02eb3dd569.jpg" />
+    <link rel="apple-touch-icon" href="https://s3.twcstorage.ru/lovarus/vibebuilder/projects/c862ad9b-e947-4458-98eb-e753bfc93df8/images/7d2585bc-c324-47c1-9eda-1d02eb3dd569.jpg" />
+    <title>INDUSTRY HEART — Сердце промышленности. Играй бесплатно</title>
+    <!-- Полифилл createShadowRoot + подавление ошибок расширений -->
+    <script>(function(){
+      var fn=function(){return this.attachShadow?this.attachShadow({mode:'open'}):null};
+      [Element,Document,DocumentFragment,ShadowRoot].forEach(function(C){
+        if(typeof C!=='undefined'&&C.prototype&&!C.prototype.createShadowRoot)C.prototype.createShadowRoot=fn;
+      });
+      if(Element.prototype.attachShadow){
+        var _a=Element.prototype.attachShadow;
+        Element.prototype.attachShadow=function(){
+          var sr=_a.apply(this,arguments);
+          if(sr&&!sr.createShadowRoot)sr.createShadowRoot=fn;
+          return sr;
+        };
+      }
+      // Подавляем ошибки в консоли (включая изолированные миры)
+      var _ce=console.error;
+      console.error=function(){
+        for(var _i=0;_i<arguments.length;_i++){
+          var a=arguments[_i];
+          if(a&&typeof a==='string'&&(a.indexOf('createShadowRoot')!==-1))return;
+          if(a&&a.message&&String(a.message).indexOf('createShadowRoot')!==-1)return;
+          if(a&&a.stack&&a.stack.indexOf('createShadowRoot')!==-1)return;
+        }
+        return _ce.apply(console,arguments);
+      };
+      // Подавляем ошибки расширений (Trust, Яндекс.Браузер и т.п.)
+      window.addEventListener('error',function(e){
+        var m=String(e.message||'')+String(e.error&&e.error.stack||'');
+        if(m.indexOf('createShadowRoot')!==-1||m.indexOf('trust.plugin')!==-1||m.indexOf('Узел не найден')!==-1){
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+      },true);
+      // Перехват unhandledrejection
+      window.addEventListener('unhandledrejection',function(e){
+        var m=String(e.reason||'');
+        if(m.indexOf('createShadowRoot')!==-1||m.indexOf('trust')!==-1){e.preventDefault();}
+      });
+    })();</script>
+    <script type="module" crossorigin src="./assets/index-FPWPRrWI.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CYfwP91X.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="padding:40px;text-align:center;font-family:sans-serif;background:#121212;color:#e0e0e0;min-height:100vh">
+        <h1>INDUSTRY HEART</h1>
+        <p>Метавселенная: добывай ресурсы карьерной техникой, собирай двигатели, прокачивай оборудование, конкурируй в лидерборде. Экономика FECOCOIN. Возрастной рейтинг 12+.</p>
+
+        <h2>Уровни месторождений</h2>
+        <ul>
+          <li>Песчаный карьер — песок, экскаваторы и самосвалы</li>
+          <li>Гравийный карьер — гравий, бульдозеры и погрузчики</li>
+          <li>Угольный разрез — уголь, роторные экскаваторы</li>
+          <li>Нефтяное месторождение — нефть, буровые установки</li>
+          <li>Газовое месторождение — газ, компрессорные станции</li>
+          <li>Рудный карьер — руда, гигантская техника (БелАЗ)</li>
+        </ul>
+
+        <h2>Типы двигателей (мини-игра «Собери двигатель»)</h2>
+        <ul>
+          <li>Поршневой ДВС — 12 деталей: поршень, коленвал, ГБЦ, клапаны, свечи, маховик</li>
+          <li>Газовая турбина (ГТД) — 12 узлов: компрессор, камера сгорания, турбина, сопло</li>
+        </ul>
+
+        <h2>Тарифы</h2>
+        <ul>
+          <li>Бесплатно — 0 ₽, песчаный карьер</li>
+          <li>Лайт — 8 ₽/мес, гравий + уголь</li>
+          <li>Лайт+ — 88 ₽/мес, нефть + газ</li>
+          <li>Премиум — 888 ₽/мес, все 6 уровней</li>
+          <li>Навсегда — 8 888 ₽, всё навсегда</li>
+        </ul>
+
+        <h2>Контакты</h2>
+        <p>Сайт: <a href="https://fecoplay.ru" style="color:#8B1A6B">fecoplay.ru</a></p>
+        <p>Email: support@fecoplay.ru</p>
+        <p>© INDUSTRY HEART · ИНН 661703788896 · Фефелов Евгений Васильевич</p>
+      </div>
+    </noscript>
+    <!-- URL бэкенда PocketBase — установлен до загрузки приложения -->
+    <script>
+      window.__VB_BACKEND_URL = 'https://feco-play-kopiya-vhvt.luvr.site';
+    </script>
+  </body>
+</html>
